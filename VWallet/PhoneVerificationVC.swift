@@ -20,9 +20,9 @@ class PhoneVerificationVC: UIViewController {
         super.viewDidLoad()
         activityIndicator.hidesWhenStopped = true
         view.addSubview(activityIndicator)
-//        if (Storage.phoneNumberInE164 != nil) {
-//            inputNumber.text = Storage.phoneNumberInE164
-//        }
+        if (Storage.phoneNumberInE164 != nil) {
+            inputNumber.text = Storage.phoneNumberInE164
+        }
         configureTapGesture()  // turns off the keypad when tapped on the blank screen
     }
     
